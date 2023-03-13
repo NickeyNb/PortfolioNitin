@@ -1,0 +1,79 @@
+
+#projects {
+  width: 100%;
+  height: 100%;
+  padding: 8rem $p;
+  
+  > h2 {
+    font: 700 2.5rem $text2;
+    width: fit-content;
+    border-bottom: 1px solid $N;
+    padding: 0.5rem;
+    margin: auto;
+    color: $N ;
+  }
+
+  > section {
+    margin-top: 4rem;
+    width: 100%;
+    height: 90%;
+    background-color: $bg_2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15%;
+    > article {
+      // background-color: red;
+      width: 70%;
+      height: 25vmax;
+    }
+
+    .item {
+      overflow-y: auto;
+      height: 25vmax;
+      width: 90%;
+      margin: auto;
+      background-color: $bg_1;
+      display: flex;
+      padding: 2rem;
+      box-shadow: 0 0 20px 5px $n;
+
+      > img {
+        border-radius: 20px;
+        width: 40%;
+        object-fit: cover;
+      }
+
+      > aside {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        >h3 {
+          color: $n;
+        }
+        > p {
+          letter-spacing: 3px;
+          line-height: 180%;
+          margin: 2rem;
+          color: $color4;
+        }
+        > a {
+          background-color: $bg_2;
+          padding: 0.7rem 2rem;
+          margin: 2rem;
+          color: $N;
+          transition: all 0.5s;
+          border: 1px solid $N;
+          border-radius: 10px;
+          &:hover {
+            color: black;
+            background-color: $N;
+          }
+        }
+      }
+    }
+  }
+}

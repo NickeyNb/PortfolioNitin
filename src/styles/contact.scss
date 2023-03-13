@@ -1,0 +1,79 @@
+
+#contact {
+    padding-top: 8rem;
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  
+    > section {
+      background-color: $bg_2;
+      border-radius: 0 15rem 0 0;
+      width: 100%;
+      height: 100%;
+      box-shadow: 10px 0px 10px 0px $N;
+      > form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        > h2 {
+          color: $N;
+          border-bottom: 1px solid $N;
+          text-align: center;
+          font: 100 2.7rem $text2;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          margin: 2rem;
+        }
+        > input,
+        > textarea,
+        > button {
+          padding: 0.8rem;
+          width: 40%;
+          outline: none;
+          font: 400 0.9rem $text1;
+          margin: 1rem;
+          border-radius: 5px;
+          border: none;
+        }
+        
+        >textarea {
+          width: 50%;
+          resize: none;
+          
+        }
+        > button {
+          cursor: pointer;
+          background-color: $color6;
+          color: $N;
+          font: 800 1rem $text1;
+          text-transform: uppercase;
+          margin: 2rem 0 5rem;
+          &:hover {
+            color: black;
+            box-shadow: 0 0 20px $N;
+            background-color: $N;
+          }
+        }
+      }
+    }
+  
+    > aside {
+      width: 100%;
+      height: 100%;
+      // background-color: $color5;
+      display: grid;
+      place-items: center;
+      // color: $N;
+      img {
+        // background-color: $N;
+      
+        width: 90%;
+        height: 90%;
+        object-fit: contain;
+        filter:drop-shadow(0 0 15px aqua) ;
+        animation: upupdowndown 0.7s infinite linear alternate;
+      }
+    }
+  }

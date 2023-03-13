@@ -1,0 +1,157 @@
+
+#home {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+
+    >section {
+        width: 100%;
+
+        &:first-of-type {
+            padding-left: $p;
+
+            >div {
+                border-top: 1px solid $color6_2;
+                height: 100%;
+                padding-top: 9rem;
+
+                >h2 {
+                    color: $color1;
+                    font: 600 2rem $text1;
+                }
+
+                >h1 {
+                    color: $N;
+                    font: 900 4rem $text1;
+                }
+
+                .typewriterpara {
+                    color: $color1;
+                    margin: 15px 0;
+                    height: 20px;
+                    letter-spacing: 5px;
+                }
+
+                >div {
+                    display: flex;
+                    margin: 4rem 0;
+                    width: 70%;
+                    gap: 2rem;
+                    align-items: center;
+
+                    >a {
+                        font: 700 1rem $text2;
+                        background-color: $color6;
+                        border: 1px solid $N;
+                        color: $N;
+                        padding: 1rem 2.5rem;
+                        transition: all 0.3s;
+                        border-radius: 10px;
+                        &:hover {
+                            box-shadow: 0 0 1rem $N;
+                            background-color: $n;
+                            color: black;
+                        }
+
+                        // &:first-of-type {
+                        //     background-color: #333;
+                        //     color: $n;
+                        //     padding: 1rem 2.5rem;
+                        //     transition: all 0.3s;
+
+                        //     &:hover {
+                        //         background-color: $n;
+                        //         color: black;
+                        //     }
+                        // }
+
+                        // &:last-of-type {
+                        //     font: 600 1.2rem $text2;
+                        //     color: $color5;
+                        //     display: flex;
+                        //     align-items: center;
+                        // }
+                    }
+                }
+
+                article {
+                    // width: 10rem;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 3rem;
+                    margin: 2rem 0;
+
+                    >svg {
+                        cursor: pointer;
+                        font-size: 2rem;
+                        color: $color1;
+                        // border: 1px solid $N;
+                        // border-radius: 50%;
+                        //   color: $color5;
+                        // position: relative;
+                        &:hover {
+
+                            box-shadow: 0 0 10px $N;
+                            color: $n;
+                            
+                        }
+                    }
+
+                    //   &::after {
+                    //     content: "";
+                    //     // background-color: $color4;
+                    //     width: 100%;
+                    //     height: 5rem;
+                    //     border-radius: 50px;
+                    //     position: absolute;
+                    //     top: 20%;
+                    //     left: 20%;
+                    //     z-index: -1;
+                    //   }
+                    //   > p {
+                    //     font: 900 2rem $text1;
+                    //   }
+                }
+
+            }
+        }
+
+        &:last-of-type {
+            border-top: 5px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+
+            //   &::after {
+            //     content: "";
+            //     width: 40vmax;
+            //     height: 40vmax;
+            //     background-color: $color3;
+            //     position: absolute;
+            //     z-index: -1;
+            //     border-radius: 50%;
+            //   }
+
+            >img {
+                border: 2px solid $N;
+                border-radius: 50%;
+                width: 40vmax;
+                object-fit: contain;
+                height: 40vmax;
+            }
+        }
+    }
+
+    >a >svg {
+        position: absolute;
+        font-size: 4rem;
+        color: $N;
+        left: 50%;
+        bottom: 5%;
+        transform: translateX(-50%);
+        animation: animateSvg 0.7s infinite linear alternate;
+        
+    }
+}
