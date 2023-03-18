@@ -30,16 +30,16 @@ a {
 body {
   background-color: $bg_2;
   background-size: 50px 50px;
-  background-image:
-    -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.26) 40%, transparent 70%),
-    -webkit-linear-gradient(rgba(0, 0, 0, 0.384) 40%, transparent 70%);
+  // background-image:
+  //   -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.26) 40%, transparent 70%),
+  //   -webkit-linear-gradient(rgba(0, 0, 0, 0.384) 40%, transparent 70%);
 
 
-  // background-color: $bg_1;
+  background-color: $bg_1;
   // background-color: $bg_2;
 
   // background-color: $color1;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 
 .disableBtn {

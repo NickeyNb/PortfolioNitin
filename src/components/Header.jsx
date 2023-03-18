@@ -6,11 +6,11 @@ const Header = ({ setMenuOpen, menuOpen }) => {
     <>
       <nav>
         <NavContent setMenuOpen={setMenuOpen} />
+        <button className="navBtn" onClick={() => setMenuOpen(!menuOpen)}>
+          <AiOutlineMenu />
+        </button>
       </nav>
 
-      <button className="navBtn" onClick={() => setMenuOpen(!menuOpen)}>
-        <AiOutlineMenu />
-      </button>
     </>
   );
 };
@@ -40,7 +40,7 @@ const NavContent = ({ setMenuOpen }) => (
         Project
       </a>
     </div>
-    <a href="#contact">
+    <a onClick={() => setMenuOpen(false)} href="#contact">
       <button>Contact</button>
     </a>
   </>

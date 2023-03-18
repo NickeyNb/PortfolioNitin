@@ -18,10 +18,12 @@
         justify-content: center;
         height: 100%;
         > h2 {
+          font: 700 2.5rem $text2;
+
           color: $N;
           border-bottom: 1px solid $N;
           text-align: center;
-          font: 100 2.7rem $text2;
+          // font: 100 2.7rem $text2;
           letter-spacing: 2px;
           text-transform: uppercase;
           margin: 2rem;

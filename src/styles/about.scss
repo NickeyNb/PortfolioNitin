@@ -1,4 +1,3 @@
-
 #about {
     width: 100%;
     height: 100%;
@@ -28,9 +27,7 @@
     // after intro
     >div {
         width: 100%;
-        // height: 90vh;
         padding: 1.7rem 0;
-        // padding-top: 1.7rem;
         display: flex;
         gap: 3rem;
 
@@ -42,10 +39,15 @@
 
             &:first-of-type {
                 >h2 {
+                    color: $n;
                     text-align: center;
                     padding-top: 0.3rem;
-                    border-bottom: 1px solid black;
+                    border-bottom: 1px solid silver;
                     font: 700 1.7rem $text1;
+
+                    >svg {
+                        color: $color1;
+                    }
                 }
 
                 >div {
@@ -53,8 +55,10 @@
                     display: flex;
                     flex-direction: column;
                     >h3 {
+                        color:$color1;
                         font: 600 1.4rem $text1;
                         >span {
+                            color: silver;
                             font: 400 1.4rem $text1;
                         }
                     }
@@ -63,17 +67,23 @@
                         padding-left: 31%;
                         padding-top: 0.5rem;
                         padding-bottom: 0.5rem;
-                        color: silver;
+                        color: wheat;
                     }
+                    
                 }
             }
 
             &:last-of-type {
                 >h2 {
+                    color: $n;
                     padding-top: 0.3rem;
                     text-align: center;
-                    border-bottom: 1px solid black;
+                    border-bottom: 1px solid silver;
                     font: 700 1.7rem $text1;
+
+                    >svg {
+                        color: $color1;
+                    }
                 }
 
                 >div {
@@ -84,11 +94,11 @@
                     >h4 {
                         font: 500 1.2rem $text1;
                         padding: 0.5rem 0;
-
+                        color: silver;
                         // BsArrowBarRight
                         >svg {
                             
-                            color: $color1;
+                            color: wheat;
                         }
                     }
 

@@ -23,8 +23,18 @@ footer {
         object-fit: contain;
       }
   
+      > h3 {
+        margin: 1rem;
+        color: $color1;
+        >svg {
+          margin-left: 0.6rem;
+          color: red;
+          animation: zoom-in-zoom-out 1.2s infinite alternate;;
+        }
+      }
       > h2 {
         margin: 1rem;
+        color: $N;  
       }
       > p {
         font: 400 1.2rem $text2;
@@ -39,6 +49,7 @@ footer {
       display: flex;
       flex-direction: column;
       align-items: center;
+      gap: 10px;
       svg {
         font-size: 2rem;
         color: $color4;
@@ -56,6 +67,7 @@ footer {
       display: grid;
       place-items: center;
       svg {
+        animation: upupdowndown 0.7s infinite linear alternate;
         font-size: 2rem;
         color: $N;
       }

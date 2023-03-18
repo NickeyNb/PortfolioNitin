@@ -46,6 +46,7 @@
 
   #skills {
     padding: $p_md;
+    padding-bottom: 0;
 
     >section {
       height: 90%;
@@ -63,6 +64,12 @@
 
   footer {
     padding-left: $p_md;
+  }
+}
+
+@media screen and (max-width: 1210px) {
+  #home>section:first-of-type>div>div>a {
+    padding: 1rem 2rem;
   }
 }
 
@@ -99,13 +106,76 @@
     }
   }
 
-  #projects {
-    padding: 8rem $p_base;
+  #skills {
+    // padding: $p_base_inverse;
+    padding: 8rem $p;
+    padding-bottom: 0;
+    text-align: center;
   }
 
-  #skills {
-    padding: $p_base_inverse;
-    text-align: center;
+  // #contact {
+  //   padding-top: 0;
+  //   grid-template-columns: 1fr 1fr;
+
+  //   >section>form {
+  //     display: flex;
+  //     flex-direction: column;
+  //     align-items: flex-start;
+  //     justify-content: center;
+  //     // height: 100%;
+
+  //     >h2 {
+  //       font: 700 2.5rem $text2;
+  //       text-align: start;
+  //       margin: 1rem;
+  //     }
+  //     >button {
+  //       margin: 1rem;
+  //     }
+  //   }
+
+  // >aside {
+  //   display: none;
+  // }
+  // }
+}
+
+@media screen and (max-width: 1055px) {
+
+  #home>section:first-of-type>div>div>a {
+    padding: 1rem 1rem;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  #home>section:first-of-type>div>div>a {
+    &:last-of-type {
+
+      padding: 1rem 0.2rem;
+    }
+  }
+
+  #contact {
+    // padding-top: 0;
+    grid-template-columns: 1fr 1fr;
+
+    >section>form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+
+      >h2 {
+        font: 700 2rem $text2;
+        text-align: start;
+        margin: 1rem;
+      }
+
+      >button {
+        margin: 1rem;
+      }
+    }
   }
 }
 
@@ -143,7 +213,7 @@
 
   #projects {
     padding: 8rem $p_zero;
-
+    padding-top: 0;
     >section {
       >article {
         height: 25rem;
@@ -161,22 +231,22 @@
 
 
 
-  #contact>section {
+  // #contact>section {
 
-    // border-radius: 0px;
+  //   // border-radius: 0px;
 
-    >form {
-      >h2 {
-        font: 100 2.3rem $text2;
-      }
+  //   >form {
+  //     >h2 {
+  //       font: 100 2.3rem $text2;
+  //     }
 
-      >input,
-      >button,
-      >textarea {
-        width: 65%;
-      }
-    }
-  }
+  //     >input,
+  //     >button,
+  //     >textarea {
+  //       width: 65%;
+  //     }
+  //   }
+  // }
 
   footer {
     padding-left: $p_zero;
@@ -215,13 +285,21 @@
         >div {
           border: none;
           padding-top: 3rem;
-
+          padding-left: 0;
           >h1 {
             font: 900 2.5rem $text1;
           }
 
           >div {
             flex-direction: column;
+
+            >a {
+              &:last-of-type {
+
+                padding: 1rem 1rem;
+
+              }
+            }
           }
 
           article {
@@ -237,6 +315,7 @@
       }
 
       &:last-of-type {
+        padding-top: 4rem;
         border: none;
       }
     }
@@ -257,12 +336,15 @@
 @media screen and (max-width: 800px) {
   #about {
     padding: 8rem 2rem;
+    padding-bottom: 0;
     >article {
       padding: 1rem 0;
     }
   }
+
   #skills {
-    padding: 1rem;
+    padding: 0 1rem;
+    padding-top: 8rem;
 
     >section {
       margin: 3rem 0;
@@ -279,10 +361,18 @@
       }
 
       .skillBox5 {
+        >p {
+          display: none;
+        }
+
         grid-column: 3/4;
         grid-row: unset;
       }
     }
+  }
+
+  #projects {
+    padding-top: 8rem;
   }
 }
 
@@ -293,11 +383,11 @@
     >a {
       display: none;
     }
+    .navBtn {
+      display: block;
+    }
   }
 
-  .navBtn {
-    display: block;
-  }
 
   #about {
     >div {
@@ -305,13 +395,37 @@
       grid-template-rows: 1fr 1fr;
     }
   }
+  #contact {
+    padding-top: 8rem;
+    grid-template-columns: 1fr 1fr;
+
+    >section>form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+
+      >h2 {
+        font: 700 1.5rem $text2;
+        text-align: start;
+        margin: 0.5rem;
+      }
+
+      >button {
+        margin: 1rem;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 600px) {
 
   #projects {
+    // padding-bottom: 0;
     >section {
       height: 50%;
+
       >article {
         width: 100%;
         height: 30vmax;
@@ -370,7 +484,26 @@
 
 
   #contact {
+    padding-top: 0;
     grid-template-columns: 1fr;
+
+    >section>form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+
+      >h2 {
+        font: 700 1.7rem $text2;
+        text-align: start;
+        margin: 1rem;
+      }
+
+      >button {
+        margin: 1rem;
+      }
+    }
 
     >aside {
       display: none;

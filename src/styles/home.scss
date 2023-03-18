@@ -9,20 +9,20 @@
 
         &:first-of-type {
             padding-left: $p;
-
             >div {
                 border-top: 1px solid $color6_2;
                 height: 100%;
                 padding-top: 9rem;
-
+                padding-left: 3rem;
                 >h2 {
                     color: $color1;
                     font: 600 2rem $text1;
                 }
-
+                
                 >h1 {
                     color: $N;
                     font: 900 4rem $text1;
+                    text-shadow: 1px 1px $n;
                 }
 
                 .typewriterpara {
@@ -52,65 +52,25 @@
                             background-color: $n;
                             color: black;
                         }
-
-                        // &:first-of-type {
-                        //     background-color: #333;
-                        //     color: $n;
-                        //     padding: 1rem 2.5rem;
-                        //     transition: all 0.3s;
-
-                        //     &:hover {
-                        //         background-color: $n;
-                        //         color: black;
-                        //     }
-                        // }
-
-                        // &:last-of-type {
-                        //     font: 600 1.2rem $text2;
-                        //     color: $color5;
-                        //     display: flex;
-                        //     align-items: center;
-                        // }
                     }
                 }
 
                 article {
-                    // width: 10rem;
                     display: flex;
                     flex-direction: row;
                     gap: 3rem;
                     margin: 2rem 0;
 
-                    >svg {
+                    >a >svg {
                         cursor: pointer;
                         font-size: 2rem;
-                        color: $color1;
-                        // border: 1px solid $N;
-                        // border-radius: 50%;
-                        //   color: $color5;
-                        // position: relative;
+                        color: silver;
                         &:hover {
 
-                            box-shadow: 0 0 10px $N;
-                            color: $n;
+                            color: $N;
                             
                         }
                     }
-
-                    //   &::after {
-                    //     content: "";
-                    //     // background-color: $color4;
-                    //     width: 100%;
-                    //     height: 5rem;
-                    //     border-radius: 50px;
-                    //     position: absolute;
-                    //     top: 20%;
-                    //     left: 20%;
-                    //     z-index: -1;
-                    //   }
-                    //   > p {
-                    //     font: 900 2rem $text1;
-                    //   }
                 }
 
             }
@@ -122,24 +82,13 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            overflow-x: hidden;
-
-            //   &::after {
-            //     content: "";
-            //     width: 40vmax;
-            //     height: 40vmax;
-            //     background-color: $color3;
-            //     position: absolute;
-            //     z-index: -1;
-            //     border-radius: 50%;
-            //   }
 
             >img {
+                width: 30vmax;
+                height: 30vmax;
                 border: 2px solid $N;
                 border-radius: 50%;
-                width: 40vmax;
                 object-fit: contain;
-                height: 40vmax;
             }
         }
     }
@@ -147,11 +96,14 @@
     >a >svg {
         position: absolute;
         font-size: 4rem;
-        color: $N;
+        color: $color1;
         left: 50%;
         bottom: 5%;
         transform: translateX(-50%);
         animation: animateSvg 0.7s infinite linear alternate;
-        
-    }
+
+        &:hover {
+            color: $N;
+        }
+    }   
 }

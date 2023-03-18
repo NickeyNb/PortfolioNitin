@@ -1,8 +1,8 @@
 
 nav {
   width: 100%;
-  height: 100px;
-  background-color: rgba(0, 0, 0, 0.8);
+  height: 75px;
+  background-color: rgba(0, 0, 0, 0.9);
   border-bottom: 1.5px solid black;
   display: flex;
   align-items: center;
@@ -14,7 +14,7 @@ nav {
   z-index: 60;
 
   >h2 {
-    color: $n;
+    color: $N;
     font-size: 2rem;
   }
 
@@ -54,31 +54,26 @@ nav {
       color: black;
     }
   }
-}
-
-.navBtn {
-  width: 40px;
-  height: 40px;
-  border: none;
-  background-color: transparent;
-  color: $color5;
-  font-size: 1.4rem;
-  z-index: 150;
-  position: fixed;
-  top: 2rem;
-  right: 2rem;
-  display: none;
-
-  &:hover {
-    color: $color3;
+  >button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    color: $N;
+    font-size: 1.4rem;
+    // right: 5rem;
+    z-index: 150;
+    display: none;
+  
   }
 }
 
+
 .navPhone {
   transition: all 0.5s;
-  transform: translateY(-200%);
+  transform: translateX(200%);
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: $color5;
   padding: $p_base;
   position: fixed;
@@ -92,7 +87,7 @@ nav {
 
   >h2 {
     font-size: 2rem;
-    color: $color4;
+    color: $N;
   }
 
   >div {
@@ -105,31 +100,36 @@ nav {
       color: $color4;
       letter-spacing: 1px;
       font-weight: 500;
-      transition: all 0.3s;
+      transition: all 0.3s;  
 
       &:hover {
-        color: $color3;
+        color: $N;
       }
     }
   }
 
   >a>button {
-    border: 1px solid $color6_1;
+    border: 1px solid $color1;
     padding: 0.5rem 2rem;
-    background-color: $color1;
+    background-color: #333;
+    color: $n;
     cursor: pointer;
-    color: $color6;
     letter-spacing: 1px;
     font-weight: 500;
     transition: 0.5s;
 
     &:hover {
-      background-color: $color6;
-      color: $color4;
+      background-color: $n;
+      color: black;
     }
   }
 }
 
 .navPhoneComes {
-  transform: translateY(0);
+  transform: translateX(0);
+  // .navBtn {
+  //   position: fixed;
+  //   top: 2rem;
+  //   right: 2rem;
+  // }
 }

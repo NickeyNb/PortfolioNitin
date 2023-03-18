@@ -2,14 +2,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
-import {BsChat , BsLinkedin, BsGithub, BsInstagram, BsChevronDoubleDown } from "react-icons/bs";
+import {BsChat , BsLinkedin, BsGithub, BsInstagram, BsChevronDoubleDown, BsTelegram } from "react-icons/bs";
 import me from "../assets/me.png";
 import resume from "../assets/NitinResume.pdf";
 
 const Home = () => {
-
-  
- 
 
   const animations = {
     h1: {
@@ -36,12 +33,12 @@ const Home = () => {
   return (
     <div id="home">
       <section>
-        <div>
+        <div >
           <motion.h2 {...animations.h1}>
             Hi, I Am 
           </motion.h2>
           <motion.h1 {...animations.h1}>
-             Nitin Bisht
+            Nitin Bisht
           </motion.h1>
 
           <Typewriter
@@ -49,9 +46,9 @@ const Home = () => {
               strings: ["A Learner","A Developer", "A Designer"],
               autoStart: true,
               loop: true,
-              // cursor: "",
               wrapperClassName: "typewriterpara",
             }}
+          
           />
 
           <div>
@@ -60,10 +57,10 @@ const Home = () => {
           </div>
 
           <article>
-            <BsGithub />
-            <BsLinkedin />
-            <BsInstagram />
-            
+            <a href="https://github.com/NickeyNb" rel="noreferrer" target={"_blank"}><BsGithub /> </a>
+            <a href="https://www.linkedin.com/in/nitin-nb-3998091b6/" rel="noreferrer" target={"_blank"}><BsLinkedin /> </a>
+            <a href="https://www.instagram.com/idk_nickey_/" rel="noreferrer" target={"_blank"}><BsInstagram /> </a>
+            <a href="https://t.me/idkNickey" rel="noreferrer" target={"_blank"}><BsTelegram/ > </a>
           </article>
 
           

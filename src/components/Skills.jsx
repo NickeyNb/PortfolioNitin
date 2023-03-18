@@ -1,9 +1,10 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import {TbCode, TbBrandReact, TbDatabase} from "react-icons/tb";
-import {AiOutlineAntDesign} from "react-icons/ai";
-import {SiMicrosoftsqlserver} from "react-icons/si";
+import { TbCode, TbBrandReact, TbDatabase } from "react-icons/tb";
+import { AiOutlineAntDesign } from "react-icons/ai";
+import { SiMicrosoftsqlserver } from "react-icons/si";
+
 
 const Skills = () => {
   const animations = {
@@ -31,61 +32,76 @@ const Skills = () => {
     <div id="skills">
       <h2>Skills</h2>
       <section>
-        <motion.div
-          className="skillBox1"
+        <motion.a href="https://leetcode.com/nitinnb31122002/" rel="noreferrer" target="_blank" className="skillBox1"
           whileInView={animations.whileInView}
           initial={animations.one}
+          transition={{
+            delay: 0.2,
+          }}
         >
-          <TbCode />
-          <h4>Programming</h4>
-          <p>Years Experience</p>
-        </motion.div>
+          <div>
+            <TbCode />
+            <h4>Programming</h4>
+            <p>Proficient in C++ <br />Data Structure and Algorithm </p>
+          </div>
+        </motion.a>
 
-        <motion.div
-          className="skillBox2"
+        <motion.a className="skillBox2"
           whileInView={animations.whileInView}
           initial={animations.twoAndThree}
+          transition={{
+            delay: 0.35,
+          }}
         >
-          <AiOutlineAntDesign />
-          <h4>HTML CSS JAVASCRIPT</h4>
-          <p>Years Experience</p>
+          <div>
+            <AiOutlineAntDesign />
+            <h4>HTML CSS JAVASCRIPT</h4>
 
-        </motion.div>
-        <motion.div
-          className="skillBox3"
+          </div>
+        </motion.a>
+
+        <motion.a className="skillBox3" 
           whileInView={animations.whileInView}
           initial={animations.twoAndThree}
           transition={{
             delay: 0.2,
           }}
         >
-          <TbBrandReact />
-          <h4>ReactJs</h4>
-          <p>Years Experience</p>
+          <div>
+            <TbBrandReact />
+            <h4>ReactJs</h4>
 
-        </motion.div>
+          </div>
+        </motion.a>
 
-        <motion.div
-          className="skillBox4"
+        <motion.a href="https://nickeynb.github.io/WeatherApp/" rel="noreferrer" target="_blank" className="skillBox4"
           whileInView={animations.whileInView}
           initial={animations.four}
+          transition={{
+            delay: 0.3,
+          }}
         >
-          <SiMicrosoftsqlserver />
-          <h4>Framework</h4>
-          <p>Years Experience</p>
+          <div>
+            <SiMicrosoftsqlserver />
+            <h4>Framework</h4>
 
-        </motion.div>
+          </div>
+        </motion.a>
 
-        <motion.div
-          className="skillBox5"
+        <motion.a href="#contact" className="skillBox5"
           whileInView={animations.whileInView}
           initial={animations.four}
+          transition={{
+            delay: 0.4,
+          }}
         >
-          <TbDatabase />
-          <h4>Database</h4>
-          <p>Years Experience</p>
+          <div>
+            <TbDatabase />
+            <h4>Database</h4>
+            <p>MySql (Proficient) <br /> MongoDb (Proficient) </p>
 
-        </motion.div>
+          </div>
+        </motion.a>
       </section>
     </div>
   );
