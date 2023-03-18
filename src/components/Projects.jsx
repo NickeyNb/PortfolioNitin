@@ -24,18 +24,18 @@ const Projects = () => {
             autoPlay={true}
           >
             <div className="item">
-              <img src={img1} alt="My Porject wallpaper"/>
+              <img src={img1} alt="My Project wallpaper"/>
               <aside>
                 <h3>Portfolio</h3>
                 <p>Built my portfolio that showcases my project, experience and demonstrate my skills as a developer and a designer.</p>
-                <a target={"blank"} href={"https://nickeynb.github.io/My-Portfolio/"}>
+                <a target={"blank"} href={"https://nickeynb.github.io/PortfolioNitin/"}>
                   View Demo
                 </a>
               </aside>
             </div>
 
             <div className="item">
-              <img src={img2} alt="My Porject wallpaper"/>
+              <img src={img2} alt="My Project wallpaper"/>
               <aside>
                 <h3>Visualizer</h3>
                 <p>Build a sorting algorithm visualizer, which can visualize 7 different sorting algorithms.</p>
@@ -46,7 +46,7 @@ const Projects = () => {
             </div>
 
             <div className="item">
-              <img src={img3} alt="My Porject wallpaper"/>
+              <img src={img3} alt="My Project wallpaper"/>
               <aside>
                 <h3>Map</h3>
                 <p>Started making it just to learn about APIs. It was fun making custom map of my favourite

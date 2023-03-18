@@ -10,10 +10,13 @@ const Footer = () => {
   return (
     <footer>
       <div>
-        <img
-          src={logo}
-          alt="Its the logo of Nitin Nb"
-        />
+        <a href="https://nickeynb.github.io/PortfolioNitin/" rel="noreferrer" target={"_blank"}>
+          <img
+            src={logo}
+            alt="Its the logo of Nitin Nb"
+
+          />
+        </a>
         <h3>Design with<AiFillHeart /></h3>
         <h2>Nitin Bisht</h2>
         <p>“Those who cannot remember the past are condemned to repeat it.” </p>
