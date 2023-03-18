@@ -1,0 +1,25 @@
+{
+  "short_name": "Nitin Bisht Developer Profile",
+  "name": "Create React App Sample",
+  "icons": [
+    {
+      "src": "mainLogo.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "mainLogo.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "mainLogo.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
