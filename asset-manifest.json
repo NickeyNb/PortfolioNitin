@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/PortfolioNitin/static/css/main.cf86deaf.css",
-    "main.js": "/PortfolioNitin/static/js/main.d7e10e19.js",
+    "main.css": "/PortfolioNitin/static/css/main.c29a9d1e.css",
+    "main.js": "/PortfolioNitin/static/js/main.afcaf5a6.js",
     "static/media/me.png": "/PortfolioNitin/static/media/me.c5970f75b152af7e4915.png",
     "static/media/Personal.png": "/PortfolioNitin/static/media/Personal.191530b71f78f051044c.png",
     "static/media/mainLogo.png": "/PortfolioNitin/static/media/mainLogo.85e0be515d96579f78fa.png",
@@ -12,11 +12,11 @@
     "static/media/Sudoku.png": "/PortfolioNitin/static/media/Sudoku.4e77702f4fb27862b604.png",
     "static/media/SortingVis.png": "/PortfolioNitin/static/media/SortingVis.053272973bde3b1f8bab.png",
     "index.html": "/PortfolioNitin/index.html",
-    "main.cf86deaf.css.map": "/PortfolioNitin/static/css/main.cf86deaf.css.map",
-    "main.d7e10e19.js.map": "/PortfolioNitin/static/js/main.d7e10e19.js.map"
+    "main.c29a9d1e.css.map": "/PortfolioNitin/static/css/main.c29a9d1e.css.map",
+    "main.afcaf5a6.js.map": "/PortfolioNitin/static/js/main.afcaf5a6.js.map"
   },
   "entrypoints": [
-    "static/css/main.cf86deaf.css",
-    "static/js/main.d7e10e19.js"
+    "static/css/main.c29a9d1e.css",
+    "static/js/main.afcaf5a6.js"
   ]
 }
